@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Manco Berga <span class="highlight">Yoel</span></h1>
+            <p class="subtitle">Partidas de hoy con el manco de yoel</p>
+        </header>
+
+        <main class="gallery">
+            <div class="gallery-grid">
+                <!-- Imagen 1 -->
+                <div class="gallery-item" data-image="1">
+                    <div class="image-container">
+                        <img src="/YoelManco1.png" alt="Paisaje natural" class="image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Exhibit A</h3>
+                                <p>Prueba 1 de la manques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 2 -->
+                <div class="gallery-item" data-image="2">
+                    <div class="image-container">
+                        <img src="/Yoelmanco2.png" alt="Arquitectura moderna" class="image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Exhibit B</h3>
+                                <p>Prueba 2 de la manques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 3 -->
+                <div class="gallery-item" data-image="3">
+                    <div class="image-container">
+                        <img src="/Yoelmanco3.png" alt="Bosque encantado" class="image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Exhibit C</h3>
+                                <p>Prueba 3 de la manques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 4 -->
+                <div class="gallery-item" data-image="4">
+                    <div class="image-container">
+                        <img src="/yoelmanco5.png" alt="Aurora boreal" class="image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Exhibit D</h3>
+                                <p>Prueba 4 de la manques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 5 -->
+                <div class="gallery-item" data-image="5">
+                    <div class="image-container">
+                        <img src="/yoelmanco4.png" alt="Olas del mar" class="image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Exhibit E</h3>
+                                <p>Prueba 5 de la manques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal fuera del main -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="modal-image" id="modalImg" alt="Vista ampliada">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
